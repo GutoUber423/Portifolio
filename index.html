@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Your Name</title>
+  <style>
+    /* ==== RESET ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ==== GLOBAL ==== */
+    section {
+      padding: 60px 10%;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background: #0077ff;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background: #005ad1;
+      transform: scale(1.05);
+    }
+
+    /* ==== HERO ==== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #0077ff, #00c6ff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 25px;
+    }
+
+    /* ==== WHAT I DO ==== */
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    /* ==== PORTFOLIO ==== */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .portfolio-item h3 {
+      margin-bottom: 10px;
+    }
+
+    /* ==== WHY CHOOSE ME ==== */
+    .reasons {
+      display: grid;
+      gap: 15px;
+    }
+    .reason {
+      background: #f5f9ff;
+      border-left: 5px solid #0077ff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    /* ==== FOOTER ==== */
+    footer {
+      background: #111;
+      color: #ddd;
+      text-align: center;
+      padding: 30px 10%;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Hi, I’m [Your Name] 👋</h1>
+    <p>I build affordable, modern websites for small businesses, students, and creators.<br>
+    Fast. Clean. Custom.</p>
+    <a href="https://forms.gle/YOUR_FORM_LINK" target="_blank" class="btn">👉 Request a Website</a>
+  </header>
+
+  <!-- WHAT I DO -->
+  <section>
+    <h2>What I Do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Starter Website</h3>
+        <p>Simple personal or student portfolio (1–3 pages).</p>
+      </div>
+      <div class="card">
+        <h3>Business Website</h3>
+        <p>Clean and professional site for small businesses (restaurant, shop, tutor, etc.).</p>
+      </div>
+      <div class="card">
+        <h3>Custom Projects</h3>
+        <p>Interactive sites, Python apps, or Roblox games.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section>
+    <h2>My Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <h3>Coffee Shop Website</h3>
+        <p>A modern, responsive design.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Student Portfolio</h3>
+        <p>A sleek one-page profile.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Tutoring Service</h3>
+        <p>Professional landing page with contact form.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE ME -->
+  <section>
+    <h2>Why Choose Me?</h2>
+    <div class="reasons">
+      <div class="reason">✔️ Affordable (no huge agency fees).</div>
+      <div class="reason">⚡ Fast turnaround.</div>
+      <div class="reason">❤️ Passionate about coding and design.</div>
+      <div class="reason">📞 Direct contact with me, no middleman.</div>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section>
+    <h2>How to Order</h2>
+    <p>Click the button below. Fill out a quick form with what you need. I’ll reply within 24 hours.</p>
+    <a href="https://forms.gle/YOUR_FORM_LINK" target="_blank" class="btn">👉 Request a Website</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 [Your Name] – Digital Creator</p>
+    <p>“Building websites today, building the future tomorrow.”</p>
+  </footer>
+
+</body>
+</html>
